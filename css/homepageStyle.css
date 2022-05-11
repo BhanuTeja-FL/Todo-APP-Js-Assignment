@@ -75,12 +75,9 @@ nav {
 /*//////////////////APP BODY ////////////////// */
 /* ////////////////////loading icon css */
 .loading-section {
-/*   position: fixed;
+  position: fixed;
   right: 50%;
-  top: 50%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 50%;
 }
 .lds-spinner {
   color: official;
