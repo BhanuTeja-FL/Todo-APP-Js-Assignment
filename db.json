@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "Swiming",
+      "done": "false",
+      "id": 1
+    },
+    {
+      "name": "Coding",
+      "done": "true",
+      "id": 3
+    },
+    {
+      "name": "Cooking",
+      "done": "true",
+      "id": 4
+    }
+  ]
+}

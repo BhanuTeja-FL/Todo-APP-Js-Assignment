@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoAPP</title>
+    <link rel="stylesheet" href="../css/homepageStyle.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <div class="logo-box">
+            <i class="bx bx-list-check bx-tada logo-icon"></i>
+          </div>
+          <div class="logo-heading">T0D0</div>
+        </div>
+        <div class="home-container">
+          <button
+            class="home-btn"
+            onclick="window.location.href='../Index.html'"
+          >
+            <span class="logout">Home</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="home-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="user-info">
+      <div class="date-container"></div>
+      <div class="time-container"></div>
+    </section>
+    <section class="theme-section">
+      <button class="theme-btn" type="button" onclick="themeChanger()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="theme-dark"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          00
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+          />
+        </svg>
+      </button>
+    </section>
+    <section class="loading-section hidden">
+      <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <section class="input-section">
+      <div class="task-details">
+        <button class="all-btn task-details-btns">ALL</button>
+        <button class="completed-btn task-details-btns">COMPLETED</button>
+        <button class="pending-btn task-details-btns">PENDING</button>
+      </div>
+      <h1 class="note-heading">NOTE YOUR TASK HERE</h1>
+      <div class="task-input-container">
+        <input
+          type="text"
+          class="task-input"
+          placeholder="Add Your Tasks Here..."
+        />
+        <button class="task-input-btn">
+          <i class="bx bx-task task-input-icon"></i>
+        </button>
+      </div>
+      <div class="popup-input"></div>
+      <div class="search-bar-box">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search Tasks Here!"
+        />
+        <button class="task-search-btn">
+          <i class="bx bx-search task-search-icon"></i>
+        </button>
+      </div>
+    </section>
+    <section class="tasks-section"></section>
+    <div class="no-tasks-div"></div>
+    <section class="edit-task-section hidden">
+      <div class="edit-modal">
+        <div class="editinput-box">
+          <div class="edit-box-heading">Edit Your Task Here</div>
+          <div class="edit-warn-pop-up"></div>
+          <div class="edit-box-container">
+            <input
+              type="text"
+              class="update-input"
+              placeholder="Enter Updated Task Name"
+            />
+            <i class="bx bxs-edit bx-flashing edit-icon"></i>
+          </div>
+        </div>
+        <div class="close-edit-box">
+          <i class="bx bx-x bx-tada close-edit-box-icon"></i>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/homepageScript.js"></script>
+  </body>
+</html>
