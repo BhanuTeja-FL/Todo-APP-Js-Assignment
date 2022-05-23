@@ -314,6 +314,9 @@ const searchFunction = async () => {
     let res = await fetch(url);
     let data = await res.json();
     let html = "";
+      allTasksButton.style.opacity = 1;
+    pendingTasksButton.style.opacity = 0.3;
+    completedTasksButton.style.opacity = 0.3;
     await data.forEach(async (element) => {
       if (
         element.name
